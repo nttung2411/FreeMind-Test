@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Free Mind - CV</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="form.css" type="text/css">
+    <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.16.0/dist/jquery.validate.js"></script>
+</head>
+<body>
+<div class="col-4 form-style">
+    <h1 class="title">FREEMIND</h1>
+    <h3 class="sub-title">Hãy gửi CV của bạn cho chúng tôi</h3>
+    <hr class="hr-style">
+    <form id="registerForm" method="post">
+        <div class="form-group">
+            <table class="table">
+                <tr>
+                    <th><label for="name">Tên của bạn:</label></th>
+                    <td><input id="name" name="name" placeholder="Ví dụ: Nguyễn Văn A" class="form-control" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="phone">Số điện thoại:</label></th>
+                    <td><input id="phone" name="phone" placeholder="Số điện thoại liên lạc" class="form-control"></td>
+                </tr>
+                <tr>
+                    <th><label for="position">Vị trí:</label></th>
+                    <td><select id="position" class="form-control">
+                        <option>Intern</option>
+                        <option>Fresher</option>
+                        <option>Junior</option>
+                        <option>Senior</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <th><label for="experience">Kinh nghiệm làm việc:</label></th>
+                    <td><textarea id="experience" placeholder="Kinh nghiệm của bạn..." class="form-control"
+                                  rows="7"></textarea>
+                        <div class="hide-input-image">
+                            <label for="fileImage"><i class="fa fa-paperclip"></i><small> Đính kèm hình ảnh</small></label>
+                            <input type="file" id="fileImage" name="fileImage">
+                            <p id="nameFile"></p>
+                            <p id="p1"></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="email">Email:</label></th>
+                    <td><input id="email" name="email" placeholder="Email liên lạc" class="form-control"></td>
+                </tr>
+            </table>
+            <button type="button" class="btn" id="submit">Gửi CV Free Mind</button>
+        </div>
+    </form>
+</div>
+<script src="form.js"></script>
+</body>
+</html>
